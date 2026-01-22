@@ -22,10 +22,24 @@ input {
   padding: 10px;
   border-radius: 20px;
   border: 2px solid rgb(1, 1, 45);
-  width: 30%;
+  width: 50%;
 }
 
 h1 {
+  font-size: 80px;
+  line-height: 70px;
+  margin: 10px 0px 0px 0px;
+}
+
+.current-day-week,
+.current-time {
+  font-size: 50px;
+  text-align: right;
+}
+
+.current-temperature {
+  font-size: 60px;
+  line-height: 35px;
 }
 
 .bodyBlock {
