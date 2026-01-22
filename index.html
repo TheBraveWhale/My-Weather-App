@@ -5,21 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My weather app</title>
     <link rel="stylesheet" href="scr/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="bodyBlock">
       <form action="">
-        <input type="search" id="city-search-input" />
-        <input type="submit" value="search" id="search-button" />
+        <input type="search" placeholder="Enter a city..." class="city-search-input" />
+        <input type="submit" value="🔍" class="search-button" />
       </form>
 
-      <h1 class="current-city">Paris</h1>
-      <div class="current-temperature">22C</div>
-      <div class="current-day-week">Monday</div>
+        <div>
+           <h1 class="current-city">Paris</h1>
+      <div class="current-temperature">22C</div> 
+        </div>
+      
+        <div>
+           <div class="current-day-week">Monday</div>
       <div class="current-time">
         <span class="current-hour">12</span>:<span class="current-minutes"
           >30</span
-        >
+        > 
+        </div>
+      
       </div>
 
       <img src="" alt="" id="current-weather-icon" />

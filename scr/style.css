@@ -1,0 +1,44 @@
+html,
+body {
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0 auto;
+  color: rgb(1, 1, 45);
+  height: 100%;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    180deg,
+    rgb(1, 1, 45) 31%,
+    rgba(70, 213, 235, 0.841) 63%,
+    rgba(70, 213, 235, 1) 100%
+  );
+}
+
+input {
+  background-color: rgba(239, 250, 252, 0.26);
+  color: rgba(1, 1, 45, 0.747);
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid rgb(1, 1, 45);
+  width: 30%;
+}
+
+h1 {
+}
+
+.bodyBlock {
+  background-color: rgb(168, 242, 254);
+  margin: 50px auto;
+  padding: 20px;
+  width: 50%;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px rgba(1, 1, 45, 0.867);
+}
+
+.search-button {
+  width: 40px;
+  border-radius: 100%;
+  text-align: center;
+}
