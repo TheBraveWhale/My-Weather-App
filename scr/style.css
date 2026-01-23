@@ -33,6 +33,11 @@ h1 {
   line-height: 70px;
   margin: 10px 0px 0px 0px;
 }
+
+footer {
+  font-size: 19px;
+  color: rgba(1, 1, 45, 0.747);
+}
 .current-block {
   display: flex;
   justify-content: space-between;
@@ -95,4 +100,14 @@ h1 {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.weather-additions {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 35px;
+}
+
+.line {
+  border-bottom: 3px dotted rgba(1, 1, 45, 0.61);
 }
