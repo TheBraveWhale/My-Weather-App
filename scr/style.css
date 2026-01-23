@@ -79,3 +79,20 @@ h1 {
   color: rgb(168, 242, 254);
   background-color: rgb(1, 1, 45);
 }
+
+.current-weather-icon {
+  display: block;
+  position: relative;
+  transform: scale(6);
+  left: 50%;
+  top: 20px;
+  background: linear-gradient(
+    180deg,
+    rgb(1, 1, 45) 31%,
+    rgba(70, 213, 235, 0.841) 63%,
+    rgba(70, 213, 235, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
