@@ -112,3 +112,49 @@ footer {
 .line {
   border-bottom: 3px dotted rgba(1, 1, 45, 0.61);
 }
+
+.forecast {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  padding: 40px 30px 10px 30px;
+}
+
+.days {
+  text-align: center;
+  font-size: 30px;
+  background-color: rgb(1, 1, 45);
+  color: rgb(70, 213, 235, 1);
+  width: 20%;
+  height: 200px;
+  padding: 15px 0 0 0;
+  border-radius: 100px;
+  transition: all 150ms ease-in;
+}
+
+.days:hover {
+  background-color: rgba(1, 1, 45, 0.8);
+}
+
+.forecast-icon {
+  display: block;
+  position: relative;
+  transform: scale(4);
+  top: 18%;
+  background: linear-gradient(
+    180deg,
+    rgb(168, 242, 254) 31%,
+    rgba(70, 213, 235, 0.841) 63%,
+    rgba(70, 213, 235, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 10ms ease-in;
+}
+
+.forecast-temperature {
+  display: block;
+  position: relative;
+  top: 35%;
+}
