@@ -18,10 +18,54 @@ function changeCurrentWeather(response) {
   currentHour.innerHTML = date.getHours();
   currentMinute.innerHTML = formatMinutes(date);
   currentDay.innerHTML = formatDay(date);
+
+  let icon = document.querySelector(".current-weather-icon");
+  icon.innerHTML = changeIcon(response.data.condition.icon);
+}
+
+function changeIcon(condition) {
+  if (condition === "clear-sky-day") {
+    return "sunny";
+  }
+  if (condition === "clear-sky-night") {
+    return "dark_mode";
+  }
+  if (condition === "few-clouds-day") {
+    return "partly_cloudy_day";
+  }
+  if (condition === "few-clouds-night") {
+    return "partly_cloudy_night";
+  }
+  if (
+    condition === "scattered-clouds-day" ||
+    condition === "scattered-clouds-night"
+  ) {
+    return "cloud";
+  }
+  if (
+    condition === "broken-clouds-day" ||
+    condition === "broken-clouds-night"
+  ) {
+    return "filter_drama";
+  }
+  if (condition === "shower-rain-day" || condition === "shower-rain-night") {
+    return "rainy_light";
+  }
+  if (condition === "rain-day" || condition === "rain-night") {
+    return "rainy";
+  }
+  if (condition === "thunderstorm-day" || condition === "thunderstorm-night") {
+    return "thunderstorm";
+  }
+  if (condition === "snow-day" || condition === "snow-night") {
+    return "ac_unit";
+  }
+  if (condition === "mist-day" || condition === "mist-night") {
+    return "";
+  }
 }
 
 function formatDay(date) {
-  let day = date.getDay();
   let days = [
     "Sunday",
     "Monday",
@@ -32,9 +76,7 @@ function formatDay(date) {
     "Saturday",
   ];
 
-  day = days[date.getDay()];
-
-  return day;
+  return days[date.getDay()];
 }
 
 function formatMinutes(date) {
