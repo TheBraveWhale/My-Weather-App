@@ -105,4 +105,28 @@ function selectCity(event) {
 let searchForm = document.querySelector("form");
 searchForm.addEventListener("submit", selectCity);
 
+function displayForecast() {
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
+  let forecastHTML = "";
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="days">
+          ${day}
+          <br />
+          <div class="material-symbols-outlined forecast-icon">ac_unit</div>
+          <br />
+          <div class="forecast-temperature">
+            <span class="highest-temperature">20</span>°
+            <span class="lowest-temperature">15</span>°
+          </div>
+        </div>`;
+  });
+
+  let forecast = document.querySelector(".forecast");
+  forecast.innerHTML = forecastHTML;
+}
+
 searchCity("Enschede");
+displayForecast();
