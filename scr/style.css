@@ -104,7 +104,8 @@ footer {
 
 .weather-additions {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 20px;
   font-size: 35px;
 }
 
